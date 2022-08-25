@@ -1,21 +1,18 @@
-//Dada uma lista de 3 notas, calcule a média simples e, caso a média seja maior ou 
-//igual a 7, retorne "Aluno aprovado :)", se for menor que 7, retorne "Aluno reprovado :(" 
+/* 3. Dada uma lista de 3 notas, calcule a média simples e, caso a média seja maior ou 
+igual a 7, retorne "Aluno aprovado :)", se for menor que 7, retorne "Aluno reprovado :(" */
 
-let mediaNotas = [6, 7, 7];
+let nota1 = 10;
+let nota2 = 10;
+let nota3 = 10;
 
-let soma = 0;
+let mediaDasNotas = (nota1 + nota2 + nota3) / 3 ;
 
-for (let i = 0; i < mediaNotas.length; i++) {
-
-    let numero = mediaNotas[i];
-
-    soma = soma + numero;
+function calculoMedia() {
+    if (mediaDasNotas >= 7) {
+        document.write('Aluno aprovado :)');
+    }else{
+        document.write('Aluno reprovado :(');
+    }
 }
 
-let media = soma / mediaNotas.length;
-
-if (media > 7) {
-    console.log('Aluno aprovado :) Sua nota é: ' + media);
-} else {
-    console.log('Aluno reprovado :( Sua nota foi: ' + media);
-}
+console.log(calculoMedia());
