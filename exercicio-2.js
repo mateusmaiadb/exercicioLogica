@@ -1,16 +1,12 @@
-// Dada uma lista de números e uma String "+" ou "*", some ou multiplique todos os 
-// números dependendo do parâmetro.
+/* 2. Dada uma lista de números e uma String "+" ou "*", some ou multiplique todos os números dependendo do parâmetro. */
 
-let lista = [10, 20, 30];
+let string = "+";
 
-let soma = 0
-
-let nome = "+";
-
-for (let i = 0; i < lista.length; i++) {
-    soma = nome + lista[i];
-    
+function soma(numero1, numero2){
+    total = numero1 + numero2
+    return total
 }
 
-console.log(soma);
+document.write("Seu resultado: " + soma(10,10));
 
+//OBS: Fiquei com duvida nesse enuciado, na questão da String
